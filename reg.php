@@ -25,47 +25,49 @@ if(isset($_POST['sub'])){
             <table>
                 <tr>
                     <td>
-                        Name
-                        <input type="text" name="text">
+                        Nome
+                        <input type="text" name="text" placeholder="Digite seu nome">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Username
-                        <input type="text" name="user">
+                        Nome de usuário
+                        <input type="text" name="user" placeholder="Digite seu nome de usuário">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
-                        <input type="password" name="pass">
+                        Senha
+                        <input type="password" name="pass" placeholder="Digite sua senha">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        city
+                        Cidade
                         <select name="city">
-                            <option value="">-select-</option>
-                            <option value="knp">kanpur</option>
-                            <option value="lko">lucknow</option>
+                            <option value="">Selecione sua cidade</option>
+                            <option value="knp">Hortolândia</option>
+                            <option value="lko">Sumaré</option>
+                            <option value="knp">Campinas</option>
+                            <option value="knp">Sumaré</option>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Gender
-                        <input type="radio"name="gen" id="gen" value="male">male
-                        <input type="radio" name="gen" id="gen" value="female">female
+                        Gênero
+                        <input type="radio"name="gen" id="gen" value="male">Masculino
+                        <input type="radio" name="gen" id="gen" value="female">Feminino
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        Image
+                        Imagem 
                         <input type="file" name="f1">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="submit" name="sub">
+                        <input type="submit" value="Registrar-se" name="sub">
                                
                     </td>
                 </tr>

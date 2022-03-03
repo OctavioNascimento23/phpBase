@@ -13,7 +13,7 @@ if(isset($_POST['sub'])){
       header ('location:home.php');
    }
    else{
-       echo 'username or password does not exist';
+       echo 'Nome de usuário ou senha não existem';
    }
   
 }
@@ -31,20 +31,21 @@ if(isset($_POST['sub'])){
                 
                 <tr>
                     <td>
-                        Username
+                        Nome de usuário
                         <input type="text" name="user">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        password
+                        Senha
                         <input type="password" name="pass">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="sub" value="submit">
-                    </td>
+                        <input type="submit" name="sub" value="Login">                      
+                        <button><a href="reg.php">Registrar-se</a> </button>                      
+                    </td>                        
                 </tr>
             </table>
     </body>
