@@ -2,13 +2,17 @@
 include 'connect.php';
 include'checklogin.php';
 ?>
+<a href="reg_city.php">Adicionar Cidade</a>
 <table border='1'>
     <tr>
         <th>
-            Name
+            Cidade
         </th>
         <th>
-            Username
+            ID
+        </th>
+        <th>
+            Excluir
         </th>
     </tr>
 
@@ -19,10 +23,13 @@ while($f=  mysqli_fetch_assoc($qu)){
     ?>
     <tr>
         <td>
+            <?php echo $f['idCidade']?>
+        </td>
+        <td>
             <?php echo $f['cidade']?>
         </td>
         <td>
-            <?php echo $f['idCidade']?>
+            <a href="delete_city.php">Remover</a>
         </td>
     </tr>
     <?php
