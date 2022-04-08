@@ -1,6 +1,9 @@
 <?php
 include 'connect.php';
-$sq="delete from city where idCidade=6";
+
+$id = $_GET['idCidade']
+
+$sq="delete from city where idCidade=$id";
 mysqli_query($con,$sq);
 header('location:viewall_city.php');
 ?>
