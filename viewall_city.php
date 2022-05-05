@@ -26,7 +26,7 @@ while($f=  mysqli_fetch_assoc($qu)){
             <?php echo $f['idCidade']?>
         </td>
         <td>
-            <?php echo $f['cidade']?>
+            <?php echo $f['nomeCidade']?>
         </td>
         <td>
             <a href="delete_city.php?idCidade=<?php echo $f['idCidade']?>">Remover</a>

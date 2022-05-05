@@ -7,7 +7,7 @@ if(isset($_POST['sub'])){
 
     //$i="insert into reg(name,username,password,city,image,gender)value('$t','$u','$p','$c','$img','$g')";
 
-    $i = "insert into city (cidade) values ('$nomeCidade')";
+    $i = "insert into city (nomeCidade) values ('$nomeCidade')";
     mysqli_query($con, $i);
 
 }
